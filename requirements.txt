@@ -1,0 +1,7 @@
+fastapi==0.95.2
+uvicorn[standard]
+python-dotenv
+PyMySQL
+numpy
+pandas
+lightgbm

@@ -1,0 +1,6 @@
+.space
+env
+__pycache__
+.spaceignore
+Spacefile
+.env
