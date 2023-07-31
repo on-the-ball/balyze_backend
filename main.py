@@ -90,8 +90,8 @@ def predict(data):
 def matchdate():
   connection = pymysql.connect(
       host="aws.connect.psdb.cloud",
-      user="vkmpp1tahurfwu7s1r1y",
-      password="pscale_pw_qwc6jYIioh0xhWgNSReEOpADCqYOjzKD7ZKWDRsrWXQ",
+      user="mqko8qqx99xn8fzqjyxi",
+      password="pscale_pw_SSTYu7xFUht9OgDE5osidlWhDmx1gUvci0lxGQd0CmR",
       db="balyze",
       autocommit = True,
       ssl={"ssl":
