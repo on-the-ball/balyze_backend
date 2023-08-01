@@ -2,6 +2,7 @@ from fastapi import FastAPI
 import pymysql
 import datetime
 from dotenv import load_dotenv
+import os
 from fastapi.middleware.cors import CORSMiddleware
 import pickle
 import numpy as np
@@ -89,10 +90,10 @@ def predict(data):
 @app.get("/api/match")
 def matchdate():
   connection = pymysql.connect(
-      host="aws.connect.psdb.cloud",
-      user="mqko8qqx99xn8fzqjyxi",
-      password="pscale_pw_SSTYu7xFUht9OgDE5osidlWhDmx1gUvci0lxGQd0CmR",
-      db="balyze",
+      host=os.getenv("HOST"),
+      user=os.getenv("USERNAME"),
+      password=os.getenv("PASSWORD"),
+      db=os.getenv("DATABASE"),
       autocommit = True,
       ssl={"ssl":
            {"ca": "/cert.pem"}
